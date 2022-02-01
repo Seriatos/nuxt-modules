@@ -120,7 +120,7 @@ export default {
      * Refresh ad slot
      */
     refreshSlot() {
-      googletag.pubads().refresh([this.adSlot]);
+      // googletag.pubads().refresh([this.adSlot]);
     },
     handleSlotRenderEnded (event) {
       if (event.slot.getSlotId().getDomId() !== this.divId) {
