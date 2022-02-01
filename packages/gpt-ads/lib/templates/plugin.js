@@ -42,7 +42,7 @@ export default async function (ctx, inject) {
     gptInitScriptHtml += 'googletag.cmd.push(function(){googletag.openConsole();});';
   }
   // Disable initial load
-  const gptDisableInitialLoad = individualRefresh ? 'googletag.pubads().disableInitialLoad();' : '';
+  const gptDisableInitialLoad = 'googletag.pubads().disableInitialLoad();';
   // Collapse empty div
   const gptCollapseEmptyDivs = collapseEmptyDivs ? 'googletag.pubads().collapseEmptyDivs();' : '';
 
